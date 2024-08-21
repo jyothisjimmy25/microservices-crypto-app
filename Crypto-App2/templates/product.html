@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/project_styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Crypto Application</h1>
+            <a href="/logout" class="logout-btn">Logout</a>
+        </div>
+
+        <!-- Product 1 -->
+        <div class="product" id="product1">
+            <img src="{{ url_for('static', filename='images/product1.png') }}" alt="Product 1">
+            <button onclick="window.location.href='/place_order?product=1';">ORDER NOW</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product" id="product2">
+            <img src="{{ url_for('static', filename='images/product2.png') }}" alt="Product 2">
+            <button onclick="window.location.href='/place_order?product=2';">ORDER NOW</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product" id="product3">
+            <img src="{{ url_for('static', filename='images/product3.png') }}" alt="Product 3">
+            <button onclick="window.location.href='/place_order?product=3';">ORDER NOW</button>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product" id="product4">
+            <img src="{{ url_for('static', filename='images/product4.png') }}" alt="Product 4">
+            <button onclick="window.location.href='/place_order?product=4';">ORDER NOW</button>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product" id="product5">
+            <img src="{{ url_for('static', filename='images/product5.png') }}" alt="Product 5">
+            <button onclick="window.location.href='/place_order?product=5';">ORDER NOW</button>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product" id="product6">
+            <img src="{{ url_for('static', filename='images/product6.png') }}" alt="Product 6">
+            <button onclick="window.location.href='/place_order?product=6';">ORDER NOW</button>
+        </div>
+    </div>
+</body>
+</html>

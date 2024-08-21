@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/order_confirmation.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Order Confirmation</h1>
+            <a href="/logout" class="logout-btn">Logout</a>
+        </div>
+        <div class="order-details">
+            <p>Thank you for your order!</p>
+            <p><strong>Name:</strong> {{ name }}</p>
+            <p><strong>Address:</strong> {{ address }}</p>
+            <p><strong>Quantity:</strong> {{ quantity }}</p>
+            <p><strong>Product ID:</strong> {{ product_id }}</p>
+            <p><strong>Order ID:</strong> {{ order_id }}</p>
+        </div>
+        <div class="actions">
+            <a href="http://127.0.0.1:5001/products" class="back-to-products-btn">Back to Products</a>
+        </div>
+    </div>
+</body>
+</html>
